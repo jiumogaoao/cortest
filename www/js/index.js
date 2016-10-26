@@ -45,7 +45,7 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
-		var socket = io("https://192.168.1.102:8888");
+		var socket = io("http://192.168.1.102:8888");
 		socket.on('connected', function (data) {
     		alert(JSON.stringify(data));
   		});
